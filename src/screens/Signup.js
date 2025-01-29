@@ -30,7 +30,7 @@ export default function Signup() {
 
     });
     const { location } = await response.json()
-    console.log(location);
+    console.log(location,"location");
     setAddress(location);
     setCredentials({ ...credentials, [e.target.name]: location })
   }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Delete from '@material-ui/icons/Delete'
+import DeleteTwo from '@material-ui/icons/DeleteSweepTwoTone'
 import { useCart, useDispatchCart } from '../components/ContextReducer';
+
 export default function Cart() {
   let data = useCart();
   let dispatch = useDispatchCart();
@@ -52,7 +54,8 @@ export default function Cart() {
               <th scope='col' >Quantity</th>
               <th scope='col' >Option</th>
               <th scope='col' >Amount</th>
-              <th scope='col' ></th>
+              <th scope='col' >delete One</th>
+              <th scope='col' >Delete all</th>
             </tr>
           </thead>
           <tbody>
@@ -63,7 +66,9 @@ export default function Cart() {
                 <td>{food.qty}</td>
                 <td>{food.size}</td>
                 <td>{food.price}</td>
-                <td ><button type="button" className="btn p-0"><Delete onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button> </td></tr>
+                <td ><button type="button" className="btn p-0"><DeleteTwo onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button> </td>
+                <td ><button type="button" className="btn p-0"><Delete onClick={() => { dispatch({ type: "DROP", index: index }) }} /></button> </td>
+              </tr>
             ))}
           </tbody>
         </table>
