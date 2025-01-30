@@ -12,13 +12,13 @@ import {
 // import Navbar from './components/Navbar';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
-import { CartProvider } from './components/ContextReducer';
+import { CartProviders } from './components/ContextReducer';
 import MyOrder from './screens/MyOrder';
 
 
 function App() {
   return (
-    <CartProvider>
+    <CartProviders>
       <Router>
         <div>
           <Routes>
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </CartProvider>
+    </CartProviders>
   );
 }
 

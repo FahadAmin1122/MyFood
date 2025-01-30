@@ -2,8 +2,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'NHaasGroteskDSPro-65Md' !important;
@@ -16,7 +15,7 @@ code {
 
 
 .nav-link{
-  color: white !important;
+  color: rgb(209, 207, 207) !important;
 }
 #carousel{
   max-height: 500px;

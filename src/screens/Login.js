@@ -27,7 +27,7 @@ export default function Login() {
 
     }
     else {
-      alert("Enter Valid Credentials")
+      alert("Enter Valid Credential")
     }
   }
 
